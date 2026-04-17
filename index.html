@@ -1,22 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RoCo Bait Company</title>
+  <title>RoCo Bait Company</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* NAV BUTTONS */
+    .nav button {
+      padding: 10px 18px;
+      font-size: 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .nav button:hover {
+      transform: translateY(-2px);
+      background-color: #ddd;
+    }
+
+    /* SIGNUP */
+    .signup {
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+    }
+
+    .signup input {
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .signup button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 80px 20px;
+      color: white;
+      text-align: center;
+    }
+  </style>
+
 </head>
 
-<body style="background-color:black; margin:0;">
+<body>
 
-    <div style="text-align:center; color:white; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-        
-        <h1 style="font-size:60px; margin:0;">
-            RoCo Bait Company
-        </h1>
+<!-- BACKGROUND -->
+<div style="
+  background-image: url('marsh.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+">
 
-        <h2 style="margin-top:20px;">
-            Website Under Construction
-        </h2>
+  <!-- OVERLAY -->
+  <div style="
+    background-color: rgba(0,0,0,0.6);
+    min-height: 100vh;
+  ">
+
+    <!-- HEADER -->
+    <div style="
+      width:100%;
+      background-color:black;
+      color:white;
+      text-align:center;
+      padding:20px 0;
+    ">
+
+      <div style="font-size:28px; font-weight:bold;">
+        RoCo Bait Company
+      </div>
+
+      <!-- NAV -->
+      <div class="nav" style="margin-top:15px;">
+        <button onclick="document.getElementById('shop').scrollIntoView()">Shop</button>
+        <button onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
+        <button onclick="document.getElementById('about').scrollIntoView()">About</button>
+        <button onclick="document.getElementById('gallery').scrollIntoView()">Gallery</button>
+        <button onclick="document.getElementById('locations').scrollIntoView()">Locations</button>
+      </div>
 
     </div>
+
+    <!-- LOGO -->
+    <div style="text-align:center; padding:40px 0;">
+      <img src="rocologo.png" style="
+        width:80%;
+        max-width:500px;
+        height:auto;
+        border-radius:10px;
+      ">
+    </div>
+
+    <!-- EMAIL SIGNUP -->
+    <div class="signup">
+      <h2>🎣 Join the Crew</h2>
+      <p>Get fishing tips, new bait drops, and exclusive deals</p>
+
+      <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- SHOP -->
+    <div id="shop" class="section">
+      <h2>Shop</h2>
+      <p>Coming soon: bait, tackle, and fishing gear.</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section">
+      <h2>About Us</h2>
+      <p>RoCo Bait Company provides high-quality bait for serious anglers.</p>
+    </div>
+
+    <!-- GALLERY -->
+    <div id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p>Fishing photos coming soon.</p>
+    </div>
+
+    <!-- LOCATIONS -->
+    <div id="locations" class="section">
+      <h2>Locations</h2>
+      <p>Serving anglers in your area.</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: youremail@gmail.com</p>
+    </div>
+
+    <!-- EXTRA SPACE -->
+    <div style="height:200px;"></div>
+
+  </div>
+</div>
 
 </body>
 </html>
