@@ -12,6 +12,19 @@
       text-align: center;
     }
 
+    /* VIDEO BACKGROUND */
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.2;
+      filter: brightness(0.6);
+      z-index: -1;
+    }
+
     h1 {
       padding: 20px;
     }
@@ -63,11 +76,15 @@
       display: inline-block;
       margin-top: 10px;
     }
-
   </style>
 </head>
 
 <body>
+
+  <!-- BACKGROUND VIDEO -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="background.mp4" type="video/mp4">
+  </video>
 
   <h1>Shop</h1>
 
@@ -75,35 +92,30 @@
 
   <div class="grid">
 
-    <!-- Paddle Tail -->
     <a href="paddletails.html" class="card">
       <img src="paddletail.png" alt="Paddle Tail">
       <h3>Paddle Tail Swimbait</h3>
       <p>$6.99</p>
     </a>
 
-    <!-- 2" Paddle Tail -->
     <a href="2inchpaddletails.html" class="card">
       <img src="2inchpaddletail.png" alt="2 inch Paddle Tail">
       <h3>2" Paddle Tails</h3>
       <p>$5.99</p>
     </a>
 
-    <!-- Stickbait -->
     <a href="stickbait.html" class="card">
       <img src="stickbait.png" alt="Stickbait">
       <h3>Stickbait</h3>
       <p>$5.99</p>
     </a>
 
-    <!-- Flukes -->
     <a href="flukes.html" class="card">
       <img src="flukes.png" alt="Flukes">
       <h3>Flukes</h3>
       <p>$6.49</p>
     </a>
 
-    <!-- Curly Tail Grubs -->
     <a href="grubs.html" class="card">
       <img src="grubs.png" alt="Curly Tail Grubs">
       <h3>Curly Tail Grubs</h3>
